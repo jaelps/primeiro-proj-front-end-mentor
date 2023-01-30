@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --White: hsl(0, 0%, 100%);
+      --Light-gray: hsl(212, 45%, 89%);
+      --Grayish-blue: hsl(220, 15%, 55%);
+      --Dark-blue: hsl(218, 44%, 22%);
+    }
+
+    main{
+      display: flex;
+      justify-content: center;
+    }
+
+    .fundo{
+      font-family: 'Outfit';
+      background-color: var(--Grayish-blue);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 650px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .titulo-texto{
+      font-size: 15px; 
+      text-align: center;
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 196px;
+      margin: 9px;
+
+    }
+
+    .pagrafrafo{
+      font-size: 15px; 
+      text-align: center; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 233px;
+      margin: 5px;
+    }
+
+    .box{
+      display: flex;
+      justify-content: center;
+      width: 280px;
+      height: 380px;
+      background-color: var(--White);
+      border-radius: 10px;
+      margin: 110px 5px;
+    }
+
+    .extrutura-interna{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imgem-interna{
+      display: flex;
+      justify-content: center;
+    }
+
+    .imgem-interna > img{
+      height: 230px;
+      width: 240px;
+      border-radius: 10px;
+    }
+
+    .final{
+      display: flex;
+      font-size: 11px; text-align: center;
+    }
+
+    @media screen and (max-width: 1440px) {
+      .fundo{
+        height: 823px;
+      }
+
+      .box{
+        width: 350px;
+        height: 462px;
+      }
+
+      .titulo-texto{
+        margin: 12px 0px;
+      }
+
+      .imgem-interna > img{
+        height: 280px;
+        width: 294px;
+        
+      }
+
+      .final{
+        margin: 0px 0 -2px 0px;
+        
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      main{
+        margin: 50px 0 0 0;
+      }
+
+      .fundo{
+        height: 375px;
+      }
+
+      .final{
+        margin: 114px 0 0 0;
+      }
+
+      .box{
+        width: 301px;
+        height: 429px;
+      }
+
+      .imgem-interna > img{
+        height: 262px;
+        width: 261px;
+      }
+    }
+
+  </style>
+</head>
+<body class="fundo">
+  <main>
+    <section class="box">
+      <article class="extrutura-interna">
+          <picture class="imgem-interna">
+            <img src="/qr-code-component-main/images/image-qr-code.png" alt="qr code da pagina">
+            </picture>
+            <h1 class="titulo-texto">Improve your front-end skills by building projects</h1>
+    
+            <p class="pagrafrafo">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </article>
+    </section>
+  </main>
+  <footer class="final">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
